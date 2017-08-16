@@ -1,0 +1,1924 @@
+[ 2017-08-04T23:17:02+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.126676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.069835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.070135s ]
+NOTIC: [8] Undefined variable: module F:\web\yyztask\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var F:\web\yyztask\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given F:\web\yyztask\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given F:\web\yyztask\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-08-04T23:17:03+08:00 ] 127.0.0.1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.079815s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.080071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.451257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.451545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.071124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.071261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.063602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.063949s ]
+
+[ 2017-08-04T23:17:14+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0785s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0393s ]
+
+[ 2017-08-04T23:17:16+08:00 ] 127.0.0.1 /admin.php?m=admin&c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0667s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0295s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0433s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(total_pay) AS tp_SUM FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(total_bonus1) AS tp_SUM FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(total_bonus2) AS tp_SUM FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(total_bonus3) AS tp_SUM FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(total_bonus) AS tp_SUM FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(total_salary) AS tp_SUM FROM `cms_finance` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.168263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.168583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002481s ]
+
+[ 2017-08-04T23:17:20+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000390s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.166580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.166775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2017-08-04T23:21:42+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002079s ]
+
+[ 2017-08-04T23:22:57+08:00 ] 127.0.0.1 /admin.php?c=member&a=detail&id=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cms_member` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_member` WHERE `parentid` = '170001' ORDER BY id  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_member` WHERE `parent2id` = '170001' ORDER BY id  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `parent3id` = '170001' ORDER BY id  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = null LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000378s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002680s ]
+
+[ 2017-08-04T23:26:27+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013680s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0048s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020968s ]
+
+[ 2017-08-04T23:27:14+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001665s ]
+
+[ 2017-08-04T23:28:05+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001857s ]
+
+[ 2017-08-04T23:28:25+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001785s ]
+
+[ 2017-08-04T23:29:29+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+
+[ 2017-08-04T23:29:36+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0042s ]
+SQL: INSERT INTO `cms_finance` (`finance_name`,`entry_people`,`begin_time`,`over_time`) VALUES ('32','342','342','342') [ RunTime:0.0172s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 17899 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0009s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95','17899','用户40','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170001 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95','170001','用户1','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170002 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95','170002','用户2','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170003 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95','170003','用户3','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170004 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95','170004','用户4','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170005 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95','170005','用户5','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170006 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95','170006','用户6','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170007 LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95','170007','用户7','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170008 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95','170008','用户8','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170009 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95','170009','用户9','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170010 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95','170010','用户10','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = '\"170001\"+\"amount\"' LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1048:Column 'memberid' cannot be null
+ [ SQL语句 ] : INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95',NULL,NULL,'0')
+ERR: 1048:Column 'memberid' cannot be null
+ [ SQL语句 ] : INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('95',NULL,NULL,'0')
+
+[ 2017-08-04T23:29:45+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0139s ]
+SQL: INSERT INTO `cms_finance` (`finance_name`,`entry_people`,`begin_time`,`over_time`) VALUES ('32','342','342','342') [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 17899 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0070s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96','17899','用户40','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170001 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96','170001','用户1','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170002 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96','170002','用户2','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170003 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96','170003','用户3','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170004 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96','170004','用户4','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170005 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96','170005','用户5','0') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170006 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96','170006','用户6','0') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170007 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96','170007','用户7','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170008 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96','170008','用户8','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170009 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96','170009','用户9','0') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170010 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96','170010','用户10','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = '\"170001\"+\"amount\"' LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1048:Column 'memberid' cannot be null
+ [ SQL语句 ] : INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96',NULL,NULL,'0')
+ERR: 1048:Column 'memberid' cannot be null
+ [ SQL语句 ] : INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('96',NULL,NULL,'0')
+
+[ 2017-08-04T23:30:09+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001566s ]
+
+[ 2017-08-04T23:30:10+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+
+[ 2017-08-04T23:30:17+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0049s ]
+SQL: INSERT INTO `cms_finance` (`finance_name`,`entry_people`,`begin_time`,`over_time`) VALUES ('dfsa','dfsa','ds','dfs') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 17899 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0044s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97','17899','用户40','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170001 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97','170001','用户1','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170002 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97','170002','用户2','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170003 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97','170003','用户3','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170004 LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97','170004','用户4','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170005 LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97','170005','用户5','0') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170006 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97','170006','用户6','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170007 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97','170007','用户7','0') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170008 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97','170008','用户8','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170009 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97','170009','用户9','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170010 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97','170010','用户10','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = '\"170001\"+\"amount\"' LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1048:Column 'memberid' cannot be null
+ [ SQL语句 ] : INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97',NULL,NULL,'0')
+ERR: 1048:Column 'memberid' cannot be null
+ [ SQL语句 ] : INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('97',NULL,NULL,'0')
+
+[ 2017-08-04T23:31:18+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002068s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0048s ]
+SQL: INSERT INTO `cms_finance` (`finance_name`,`entry_people`,`begin_time`,`over_time`) VALUES ('dfsa','dfsa','ds','dfs') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 17899 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0009s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98','17899','用户40','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170001 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98','170001','用户1','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170002 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98','170002','用户2','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170003 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98','170003','用户3','0') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170004 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98','170004','用户4','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170005 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98','170005','用户5','0') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170006 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98','170006','用户6','0') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170007 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98','170007','用户7','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170008 LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98','170008','用户8','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170009 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98','170009','用户9','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170010 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98','170010','用户10','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = '\"170001\"+\"amount\"' LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1048:Column 'memberid' cannot be null
+ [ SQL语句 ] : INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98',NULL,NULL,'0')
+ERR: 1048:Column 'memberid' cannot be null
+ [ SQL语句 ] : INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('98',NULL,NULL,'0')
+
+[ 2017-08-04T23:34:38+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001773s ]
+
+[ 2017-08-04T23:40:02+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000409s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001588s ]
+
+[ 2017-08-04T23:40:10+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001598s ]
+
+[ 2017-08-04T23:45:04+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0065s ]
+SQL: INSERT INTO `cms_finance` (`finance_name`,`entry_people`,`begin_time`,`over_time`) VALUES ('的撒','的撒','123','231') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-04T23:45:11+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0012s ]
+SQL: INSERT INTO `cms_finance` (`finance_name`,`entry_people`,`begin_time`,`over_time`) VALUES ('的撒','的撒','123','231') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-04T23:48:13+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001342s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002394s ]
+
+[ 2017-08-04T23:48:23+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0101s ]
+SQL: INSERT INTO `cms_finance` (`finance_name`,`entry_people`,`begin_time`,`over_time`) VALUES ('范德萨','的撒','是阿德','213') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-04T23:48:44+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001623s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0009s ]
+SQL: INSERT INTO `cms_finance` (`finance_name`,`entry_people`,`begin_time`,`over_time`) VALUES ('范德萨','的撒','是阿德','213') [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 17899 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0007s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('102','17899','用户40','0') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170001 LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('102','170001','用户1','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170002 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('102','170002','用户2','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170003 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('102','170003','用户3','0') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170004 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('102','170004','用户4','0') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170005 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('102','170005','用户5','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170006 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('102','170006','用户6','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170007 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('102','170007','用户7','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170008 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('102','170008','用户8','0') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170009 LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('102','170009','用户9','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170010 LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('102','170010','用户10','0') [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+0 WHERE `memberid` = '170001' [ RunTime:0.0147s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+0 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+0 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+0 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+0 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+0 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+0 WHERE `memberid` = '170001' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+0 WHERE `memberid` = '170001' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+0 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+0 WHERE `memberid` = '170001' [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+0 WHERE `memberid` = null [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+0 WHERE `memberid` = null [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+0 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+0 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+0 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+0 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+0 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+0 WHERE `memberid` = null [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+0 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+0 WHERE `memberid` = '170001' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+0 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+0 WHERE `memberid` = null [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_finance_content` WHERE ( finance_id="102" )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: total_sp F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 110 行.
+NOTIC: [8] Undefined index: total_salary F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 110 行.
+NOTIC: [8] Undefined index: total_bonus F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 111 行.
+NOTIC: [8] Undefined index: total_bonus1 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 112 行.
+NOTIC: [8] Undefined index: total_bonus2 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 113 行.
+NOTIC: [8] Undefined index: total_bonus3 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 114 行.
+NOTIC: [8] Undefined index: total_pay F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 115 行.
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='0' WHERE ( id="580" ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='0' WHERE ( id="581" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='0' WHERE ( id="582" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='0' WHERE ( id="583" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='0' WHERE ( id="584" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='0' WHERE ( id="585" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='0' WHERE ( id="586" ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='0' WHERE ( id="587" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='0' WHERE ( id="588" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='0' WHERE ( id="589" ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='0' WHERE ( id="590" ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_finance` SET `total_salary`='0',`total_bonus`='0',`total_bonus1`='0',`total_bonus2`='0',`total_bonus3`='0',`total_pay`='0' WHERE ( finance_id="102" ) [ RunTime:0.0006s ]
+
+[ 2017-08-04T23:48:45+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001547s ]
+
+[ 2017-08-04T23:48:51+08:00 ] 127.0.0.1 /admin.php?c=finance&a=setStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cms_finance` WHERE ( finance_id=95 ) [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0056s ]
+SQL: DELETE FROM `cms_finance_content` WHERE ( finance_id=95 ) [ RunTime:0.0005s ]
+
+[ 2017-08-04T23:48:51+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001569s ]
+
+[ 2017-08-04T23:48:54+08:00 ] 127.0.0.1 /admin.php?c=finance&a=setStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0009s ]
+SQL: DELETE FROM `cms_finance` WHERE ( finance_id=102 ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0007s ]
+SQL: DELETE FROM `cms_finance_content` WHERE ( finance_id=102 ) [ RunTime:0.0005s ]
+
+[ 2017-08-04T23:48:55+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001441s ]
+
+[ 2017-08-04T23:48:57+08:00 ] 127.0.0.1 /admin.php?c=finance&a=setStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cms_finance` WHERE ( finance_id=101 ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0055s ]
+SQL: DELETE FROM `cms_finance_content` WHERE ( finance_id=101 ) [ RunTime:0.0003s ]
+
+[ 2017-08-04T23:49:00+08:00 ] 127.0.0.1 /admin.php?c=finance&a=setStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0087s ]
+SQL: DELETE FROM `cms_finance` WHERE ( finance_id=101 ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0009s ]
+SQL: DELETE FROM `cms_finance_content` WHERE ( finance_id=101 ) [ RunTime:0.0004s ]
+
+[ 2017-08-04T23:49:02+08:00 ] 127.0.0.1 /admin.php?c=finance&a=setStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0010s ]
+SQL: DELETE FROM `cms_finance` WHERE ( finance_id=96 ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cms_finance_content` WHERE ( finance_id=96 ) [ RunTime:0.0005s ]
+
+[ 2017-08-04T23:49:03+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2017-08-04T23:49:06+08:00 ] 127.0.0.1 /admin.php?c=finance&a=setStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0014s ]
+SQL: DELETE FROM `cms_finance` WHERE ( finance_id=97 ) [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0045s ]
+SQL: DELETE FROM `cms_finance_content` WHERE ( finance_id=97 ) [ RunTime:0.0004s ]
+
+[ 2017-08-04T23:49:07+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2017-08-04T23:49:09+08:00 ] 127.0.0.1 /admin.php?c=finance&a=setStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0012s ]
+SQL: DELETE FROM `cms_finance` WHERE ( finance_id=98 ) [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0043s ]
+SQL: DELETE FROM `cms_finance_content` WHERE ( finance_id=98 ) [ RunTime:0.0004s ]
+
+[ 2017-08-04T23:49:10+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2017-08-04T23:49:12+08:00 ] 127.0.0.1 /admin.php?c=finance&a=setStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0052s ]
+SQL: DELETE FROM `cms_finance` WHERE ( finance_id=99 ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0009s ]
+SQL: DELETE FROM `cms_finance_content` WHERE ( finance_id=99 ) [ RunTime:0.0003s ]
+
+[ 2017-08-04T23:49:27+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2017-08-04T23:49:34+08:00 ] 127.0.0.1 /admin.php?c=finance&a=setStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0007s ]
+SQL: DELETE FROM `cms_finance` WHERE ( finance_id=100 ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0006s ]
+SQL: DELETE FROM `cms_finance_content` WHERE ( finance_id=100 ) [ RunTime:0.0003s ]
+
+[ 2017-08-04T23:49:49+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2017-08-04T23:49:53+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2017-08-04T23:49:55+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2017-08-04T23:50:07+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001825s ]
+
+[ 2017-08-04T23:50:38+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2017-08-04T23:50:39+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 139 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 140 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 141 行.
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,10000   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: data F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 142 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001528s ]
+
+[ 2017-08-04T23:51:06+08:00 ] 127.0.0.1 /admin.php?c=finance&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0011s ]
+SQL: INSERT INTO `cms_finance` (`finance_name`,`entry_people`,`begin_time`,`over_time`) VALUES ('账目1','武相','213','231') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 17899 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0008s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('103','17899','用户40','1000') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170001 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('103','170001','用户1','1000') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170002 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('103','170002','用户2','1000') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170003 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('103','170003','用户3','1000') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170004 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('103','170004','用户4','1000') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170005 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('103','170005','用户5','1000') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170006 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('103','170006','用户6','1000') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170007 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('103','170007','用户7','1000') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170008 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('103','170008','用户8','1000') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170009 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('103','170009','用户9','1000') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170010 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_finance_content` (`finance_id`,`memberid`,`name`,`salary`) VALUES ('103','170010','用户10','1000') [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 94 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 95 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 96 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_finance_content` WHERE ( finance_id="103" )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: total_sp F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 110 行.
+NOTIC: [8] Undefined index: total_salary F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 110 行.
+NOTIC: [8] Undefined index: total_bonus F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 111 行.
+NOTIC: [8] Undefined index: total_bonus1 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 112 行.
+NOTIC: [8] Undefined index: total_bonus2 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 113 行.
+NOTIC: [8] Undefined index: total_bonus3 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 114 行.
+NOTIC: [8] Undefined index: total_pay F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 115 行.
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="601" ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="600" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="599" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="598" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="597" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="596" ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="595" ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="594" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="593" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='1100',`pay`='2100' WHERE ( id="592" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="591" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance` SET `total_salary`='11000',`total_bonus`='1100',`total_bonus1`='1100',`total_bonus2`='0',`total_bonus3`='0',`total_pay`='12100' WHERE ( finance_id="103" ) [ RunTime:0.0003s ]
+
+[ 2017-08-04T23:51:07+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2017-08-04T23:51:09+08:00 ] 127.0.0.1 /admin.php?c=finance&a=detail&id=103
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 178 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_finance_content` WHERE `finance_id` = '103' ORDER BY id LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance_content` WHERE `finance_id` = '103' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2017-08-04T23:51:31+08:00 ] 127.0.0.1 /admin.php?c=member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [8] Undefined index: cond F:\web\yyztask\Application\Admin\Controller\MemberController.class.php 第 12 行.
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\MemberController.class.php 第 22 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\MemberController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cms_member` ORDER BY id LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_member` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002461s ]
+
+[ 2017-08-04T23:51:34+08:00 ] 127.0.0.1 /admin.php?c=member&a=detail&id=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cms_member` WHERE ( id=100 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_member` WHERE `parentid` = '170001' ORDER BY id  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_member` WHERE `parent2id` = '170001' ORDER BY id  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_member` WHERE `parent3id` = '170001' ORDER BY id  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = null LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001786s ]
+
+[ 2017-08-04T23:52:02+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2017-08-04T23:52:04+08:00 ] 127.0.0.1 /admin.php?c=finance&a=edit&id=103
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cms_finance` WHERE ( finance_id=103 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 196 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `cms_finance_content` WHERE `finance_id` = '103' ORDER BY id LIMIT 0,10000   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance_content` WHERE `finance_id` = '103' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001265s ]
+
+[ 2017-08-04T23:52:06+08:00 ] 127.0.0.1 /admin.php?c=finance&a=save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_finance` SET `finance_name`='账目1',`entry_people`='武相',`begin_time`='213',`over_time`='231',`total_salary`='0',`total_bonus`='0',`total_bonus1`='0',`total_bonus2`='0',`total_bonus3`='0',`total_pay`='0' WHERE ( finance_id=103 ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0006s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 17899 [ RunTime:0.0006s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170001 [ RunTime:0.0006s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170002 [ RunTime:0.0009s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170003 [ RunTime:0.0008s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170004 [ RunTime:0.0007s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170005 [ RunTime:0.0007s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170006 [ RunTime:0.0006s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170007 [ RunTime:0.0005s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170008 [ RunTime:0.0005s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170009 [ RunTime:0.0005s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170010 [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 17899 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = null [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170001 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170002 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170003 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170004 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170005 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170004' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = '170001' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170006 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170005' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = '170004' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = '170001' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170007 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170008 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170009 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170010 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_finance_content` WHERE ( finance_id="103" )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: total_sp F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 297 行.
+NOTIC: [8] Undefined index: total_salary F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 297 行.
+NOTIC: [8] Undefined index: total_bonus F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 298 行.
+NOTIC: [8] Undefined index: total_bonus1 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 299 行.
+NOTIC: [8] Undefined index: total_bonus2 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 300 行.
+NOTIC: [8] Undefined index: total_bonus3 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 301 行.
+NOTIC: [8] Undefined index: total_pay F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 302 行.
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="601" ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="600" ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="599" ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="598" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="597" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='100',`pay`='1100' WHERE ( id="596" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='150',`pay`='1150' WHERE ( id="595" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="594" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="593" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='570',`pay`='1570' WHERE ( id="592" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="591" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance` SET `total_salary`='11000',`total_bonus`='820',`total_bonus1`='700',`total_bonus2`='100',`total_bonus3`='20',`total_pay`='11820' WHERE ( finance_id="103" ) [ RunTime:0.0005s ]
+
+[ 2017-08-04T23:52:07+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2017-08-04T23:52:10+08:00 ] 127.0.0.1 /admin.php?c=finance&a=detail&id=103
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 178 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_finance_content` WHERE `finance_id` = '103' ORDER BY id LIMIT 0,12   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance_content` WHERE `finance_id` = '103' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2017-08-04T23:52:35+08:00 ] 127.0.0.1 /admin.php?c=finance&a=edit&id=103
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_finance` WHERE ( finance_id=103 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 196 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `cms_finance_content` WHERE `finance_id` = '103' ORDER BY id LIMIT 0,10000   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance_content` WHERE `finance_id` = '103' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001585s ]
+
+[ 2017-08-04T23:52:38+08:00 ] 127.0.0.1 /admin.php?c=finance&a=save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0007s ]
+SQL: UPDATE `cms_finance` SET `finance_name`='账目1',`entry_people`='武相',`begin_time`='213',`over_time`='231',`total_salary`='0',`total_bonus`='0',`total_bonus1`='0',`total_bonus2`='0',`total_bonus3`='0',`total_pay`='0' WHERE ( finance_id=103 ) [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 17899 [ RunTime:0.0006s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170001 [ RunTime:0.0006s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170002 [ RunTime:0.0007s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170003 [ RunTime:0.0006s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170004 [ RunTime:0.0006s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170005 [ RunTime:0.0005s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170006 [ RunTime:0.0007s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170007 [ RunTime:0.0005s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170008 [ RunTime:0.0009s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170009 [ RunTime:0.0007s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`bonus1`='0',`bonus2`='0',`bonus3`='0',`pay`='0',`salary`='1000' WHERE `finance_id` = '103' AND `memberid` = 170010 [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Common\Model\MemberModel::find() should be compatible with Think\Model::find($options = Array) F:\web\yyztask\Application\Common\Model\MemberModel.class.php 第 105 行.
+SQL: SHOW COLUMNS FROM `cms_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 17899 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170001 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170002 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170003 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = null [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170004 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170005 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170004' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = '170001' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170006 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170005' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = '170004' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = '170001' [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170007 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170008 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170009 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cms_member` WHERE `memberid` = 170010 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 282 行.
+SQL: UPDATE `cms_finance_content` SET `bonus1`=bonus1+100 WHERE `memberid` = '170001' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 283 行.
+SQL: UPDATE `cms_finance_content` SET `bonus2`=bonus2+50 WHERE `memberid` = null [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: financeid F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 284 行.
+SQL: UPDATE `cms_finance_content` SET `bonus3`=bonus3+20 WHERE `memberid` = null [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_finance_content` WHERE ( finance_id="103" )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: total_sp F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 297 行.
+NOTIC: [8] Undefined index: total_salary F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 297 行.
+NOTIC: [8] Undefined index: total_bonus F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 298 行.
+NOTIC: [8] Undefined index: total_bonus1 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 299 行.
+NOTIC: [8] Undefined index: total_bonus2 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 300 行.
+NOTIC: [8] Undefined index: total_bonus3 F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 301 行.
+NOTIC: [8] Undefined index: total_pay F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 302 行.
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="601" ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="600" ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="599" ) [ RunTime:0.0004s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="598" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="597" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='100',`pay`='1100' WHERE ( id="596" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='150',`pay`='1150' WHERE ( id="595" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="594" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="593" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='570',`pay`='1570' WHERE ( id="592" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance_content` SET `bonus`='0',`pay`='1000' WHERE ( id="591" ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_finance` SET `total_salary`='11000',`total_bonus`='820',`total_bonus1`='700',`total_bonus2`='100',`total_bonus3`='20',`total_pay`='11820' WHERE ( finance_id="103" ) [ RunTime:0.0004s ]
+
+[ 2017-08-04T23:52:38+08:00 ] 127.0.0.1 /admin.php?c=finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 9 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_finance` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cms_finance` ORDER BY finance_id DESC LIMIT 0,12   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: member F:\web\yyztask\Application\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2017-08-04T23:52:42+08:00 ] 127.0.0.1 /admin.php?c=finance&a=detail&id=103
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 178 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_finance_content` WHERE `finance_id` = '103' ORDER BY id LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance_content` WHERE `finance_id` = '103' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2017-08-04T23:53:36+08:00 ] 127.0.0.1 /admin.php?c=grade&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `cms_grade` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cms_grade` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2017-08-04T23:53:42+08:00 ] 127.0.0.1 /admin.php?c=finance&a=detail&id=103
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+NOTIC: [8] Undefined index: p F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 178 行.
+NOTIC: [8] Undefined index: pageSize F:\web\yyztask\Application\Admin\Controller\FinanceController.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `cms_finance_content` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cms_finance_content` WHERE `finance_id` = '103' ORDER BY id LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_finance_content` WHERE `finance_id` = '103' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+

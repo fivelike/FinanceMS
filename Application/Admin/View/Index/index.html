@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+  <link rel="stylesheet" href="/Public/css/semantic.min.css">
+  <link rel="stylesheet" href="/Public/css/icon.min.css">
+  <script src="/Public/js/jquery.min.js"></script>
+  <script src="/Public/js/semantic.min.js"></script>
+</head>
+<body>
+
+<div class="ui sidebar left inverted vertical menu">
+<!--   <div class="header item">
+    <img src="image/logo.jpg">
+  </div> -->
+    <a class="item" href="/admin.php?c=index"><i class="home icon"></i> 首页 </a>
+    <a class="item" href="/admin.php?c=member"><i class="user icon"></i> 会员管理 </a>
+      <a class="item" href="/admin.php?c=grade&a=index"><i class="block layout icon"></i> 等级管理 </a>
+    <a class="item" href="/admin.php?c=finance"><i class="smile icon"></i> 财务管理 </a>
+</div>
+
+
+
+<div class="ui container">
+
+<div class="ui menu">
+<div class="ui item huge header"><p>欢迎使用财务会员管理系统</p></div>
+  <div class="right menu">
+    <div class="item">
+      <div class="ui primary button">个人中心</div>
+    </div>
+    <div class="item"><a href="/admin.php?c=login&a=logout"><div class="ui primary button">退出</div></a></div>
+  </div>
+</div>
+
+
+
+  <div class="ui vertically divided grid">
+    <div class="three column row">
+      <div class="centered column">
+
+          <div class="ui card centered">
+            <div class="content">
+              <div class="ui small statistic">
+                <div class="value">
+                  {$membersCount}
+                </div>
+                <div class="label">会员总人数</div>
+              </div>
+            </div>
+           </div>
+      </div>
+
+      <div class="centered column">
+          <div class="ui centered card">
+            <div class="content">
+              <div class="ui small statistic">
+                <div class="value">
+                  {$month.total_pay|transform}
+                </div>
+                <div class="label">本月财务支出</div>
+              </div>
+            </div>
+           </div>
+      </div>
+
+            <div class="centered column">
+
+          <div class="ui card centered">
+            <div class="content">
+              <div class="ui small statistic">
+                <div class="value">
+                  {$payAgo|transform}
+                </div>
+                <div class="label">历史总支出</div>
+              </div>
+            </div>
+           </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <table class="ui celled striped table">
+  <thead>
+    <tr class="center aligned"><th colspan="6">近期结算数据</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td class="collapsing"><i class="long arrow right icon"></i> 1级奖金总额 </td>
+      <td> {$month.total_bonus1|transform}</td>
+      <td class="collapsing"><i class="long arrow right icon"></i>2级奖金总额</td>
+      <td>{$month.total_bonus2|transform}</td>
+      <td class="collapsing"><i class="long arrow right icon"></i> 3级奖金总额 </td>
+      <td> {$month.total_bonus3|transform}</td>
+    </tr>
+
+    <tr>
+      <td class="collapsing"><i class="long arrow right icon"></i> 奖金总额 </td>
+      <td>{$month.total_bonus|transform}</td>
+      <td class="collapsing" ><i class="long arrow right icon"></i> 工资总额 </td>
+      <td colspan="3"> {$month.total_salary|transform}</td>
+
+
+    </tr>
+
+  </tbody>
+</table>
+  <table class="ui celled striped table">
+  <thead>
+    <tr class="center aligned"><th colspan="6">历史数据结算</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td class="collapsing"><i class="long arrow right icon"></i>历史1级奖金总额 </td>
+      <td> {$bonus1Ago|transform}</td>
+      <td class="collapsing"><i class="long arrow right icon"></i>历史2级奖金总额</td>
+      <td> {$bonus2Ago|transform}</td>
+      <td class="collapsing"><i class="long arrow right icon"></i> 历史3级奖金总额 </td>
+      <td> {$bonus3Ago|transform}</td>
+    </tr>
+
+    <tr>
+      <td class="collapsing"><i class="long arrow right icon"></i> 历史奖金总额 </td>
+      <td>{$bonusAgo|transform}</td>
+      <td class="collapsing" ><i class="long arrow right icon"></i> 历史工资总额 </td>
+      <td colspan="3"> {$salaryAgo|transform}</td>
+
+
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+
+    <button class="ui black button animated" tabindex="0" onclick="toggle()" style="  position: fixed; top: 60px; left: 0px;">
+      <div class="visible content">
+
+        <i class="list layout icon"></i>
+      </div>
+        <div class="hidden content">
+        菜单
+      </div>
+    </button>
+</div>
+
+
+
+<script>
+function toggle() {
+    $('.ui.sidebar').sidebar({
+        // context: 'body',
+        dimPage : true,
+        // onVisible: function() {
+        //     $('body').click(function(e){
+        //         this.unbind(e);
+        //     });
+        // },
+        // onShow: function() {
+        //     $('.ui.sidebar').css("z-index",999);
+        // },
+        // onHide: function() {
+        //     $('.ui.sidebar').css("z-index",1);
+        // }
+    }).sidebar('toggle');
+}
+
+</script>
+</body>
+</html>
