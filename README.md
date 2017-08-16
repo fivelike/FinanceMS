@@ -10,10 +10,10 @@
 
 使用框架：
 
-*  前端Semantic UI css框架
-*  后端ThinkPHP3.2.3框架
-*  表格导出功能使用 PHPExcel-1.8
-*  layer和jquery
+*  前端[Semantic UI](http://www.semantic-ui.cn/) css框架
+*  后端[ThinkPHP](http://www.thinkphp.cn/)3.2.3框架
+*  表格导出功能使用 [PHPExcel-1.8](http://phpexcel.codeplex.com/)
+*  [layer](http://layer.layui.com/)和[jquery](https://jquery.com/)
 
 ## 部分截图
 
